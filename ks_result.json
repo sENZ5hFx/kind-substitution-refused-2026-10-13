@@ -1,0 +1,137 @@
+{
+  "session_id": "2026-10-13T17:40:00Z",
+  "discovery_id": null,
+  "class_minted": false,
+  "name": "Kind-Substitution refused",
+  "author": "Haley Ann Bird",
+  "agent": "Grok, under the Realm Discovery Engine adversarial-pass skill",
+  "verdict": "DO_NOT_MINT",
+  "reason": "Kind-Substitution was the leftover queued by FSC-2026-10-12. The unlike-kind refusal is already the precondition of RSC-2026-10-11. Minting requires a retrieved sentence that answers a question with the wrong kind and does not already live inside an owned class. No such sentence was retrieved.",
+  "novelty": null,
+  "coherence": null,
+  "ip_readiness": "Logged",
+  "prior_art_verified": true,
+  "not_a_physical_discovery": true,
+  "not_peer_review": true,
+  "not_a_patent": true,
+  "rows": [
+    {
+      "case": "liu_2026_vs_zooplankton_active_export",
+      "verdict": "SAME_KIND",
+      "sentence_retrieved": true,
+      "kinds_differ": false,
+      "owned_counterfactual": false,
+      "authors_already_separate": false,
+      "note": "Abstract compares 0.23-3.85 Pg C/yr active export to mesozooplankton active flux. Same kind."
+    },
+    {
+      "case": "liu_2026_forced_onto_budget_imbalance",
+      "verdict": "NO_SENTENCE",
+      "sentence_retrieved": false,
+      "kinds_differ": true,
+      "owned_counterfactual": false,
+      "authors_already_separate": false,
+      "note": "No retrieved sentence sets Liu active export equal to the -1.7 GtC yr-1 imbalance. Forcing that comparison would be this session substituting."
+    },
+    {
+      "case": "rsc_drop_retention_counterfactual",
+      "verdict": "OWNED_COUNTERFACTUAL",
+      "sentence_retrieved": true,
+      "kinds_differ": true,
+      "owned_counterfactual": true,
+      "authors_already_separate": true,
+      "note": "RSC-2026-10-11 already wrote the drop-retention illusion and refused to mint it. Owned counterfactual, and McMonagle already separates transport from sequestration."
+    },
+    {
+      "case": "pinti_2023_stock_vs_annual",
+      "verdict": "NO_SENTENCE",
+      "sentence_retrieved": false,
+      "kinds_differ": true,
+      "owned_counterfactual": false,
+      "authors_already_separate": true,
+      "note": "Pinti et al. 2023 report mesopelagic sequestration stock 280 (50-710) PgC, distinct from annual export. No retrieved sentence equates that stock to the 2024 annual imbalance."
+    },
+    {
+      "case": "mcmonagle_2024_transport_vs_sequestration",
+      "verdict": "AUTHORS_ALREADY_SEPARATE",
+      "sentence_retrieved": true,
+      "kinds_differ": true,
+      "owned_counterfactual": false,
+      "authors_already_separate": true,
+      "note": "McMonagle et al. 2024: carbon transport should not be conflated with sequestration. The authors already separate the kinds."
+    },
+    {
+      "case": "synthetic_positive_control",
+      "verdict": "KIND_SUBSTITUTION",
+      "sentence_retrieved": true,
+      "kinds_differ": true,
+      "owned_counterfactual": false,
+      "authors_already_separate": false,
+      "note": "Synthetic only. Proves the gate can return KIND_SUBSTITUTION. Not a specimen."
+    }
+  ],
+  "controls_ok": true,
+  "owned_arithmetic_not_a_result": {
+    "mg_to_GtC_yr_whole_ocean": 0.131855,
+    "mcmonagle_500m_GtC_yr": [
+      0.0686,
+      1.2658
+    ],
+    "mcmonagle_200m_drop_retention_GtC_yr": [
+      0.211,
+      2.769
+    ],
+    "mcmonagle_200m_times_8_to_30pct_high_corner_GtC_yr": 0.8307,
+    "residual_GtC_yr": 1.7,
+    "note": "Recompute only. Matches RSC: 500 m whole-ocean ceiling stays under 1.7; dropping retention straddles 1.7. That illusion stays inside RSC."
+  },
+  "liu_2026": {
+    "citation": "Qingxia Liu, Zuozhi Chen, Li Zhang, Grace K. Saba, Linbin Zhou, Honghui Huang. Marine Environmental Research 220, article 108134, August 2026. DOI 10.1016/j.marenvres.2026.108134",
+    "access": "Abstract and page snippets. PDF not opened.",
+    "active_export_PgC_yr": [
+      0.23,
+      3.85
+    ],
+    "release_PgC_yr": {
+      "DOC": [
+        0.64,
+        8.29
+      ],
+      "CO2": [
+        0.48,
+        6.17
+      ],
+      "PC": [
+        0.18,
+        2.3
+      ]
+    },
+    "net_production_PgC_yr": [
+      0.16,
+      2.2
+    ],
+    "sentence_comparison": "comparable to the active carbon fluxes mediated by mesozooplankton",
+    "answers_budget_imbalance": false
+  },
+  "standing_stock_unit_check": {
+    "extracted_dvm": "0.39-6.50 Pg wet weight or 1.0-16.7 mg C/m2",
+    "implied_mg_C_m2_if_10pct_carbon_and_3.61e14_m2": [
+      108.03,
+      1800.55
+    ],
+    "status": "UNRECONCILED. Not a discovery. The PDF was not opened, so the extracted areal unit may be the summarizer's, not the authors'."
+  },
+  "realm_map_status": "absences and one kill, not 150 discoveries",
+  "queries": [
+    "Notion IP log ordered by timestamp; FSC-2026-10-12; RSC-2026-10-11 README",
+    "kind substitution measurement category error",
+    "mesopelagic fish carbon sequestration biomass flux 2025 2026",
+    "fish-mediated carbon budget imbalance global carbon budget",
+    "Liu et al. mesopelagic fish-mediated carbon fluxes DOI 10.1016/j.marenvres.2026.108134",
+    "Pinti et al. 2023 Biogeosciences 20:997 sequestration stock vs export",
+    "McMonagle et al. 2024 ICES JMS 81:2037 transport versus sequestration"
+  ],
+  "sha256_before_hash_field": "7cf4ed4ffb4c19141112ed10ae8383bb16895063554ea5920d5cd33ccbf4bb18",
+  "prompt_sha256": "779ca33c1918a33cb9da2b471b376806922906214b4751acfdf58e206cd5438a",
+  "prompt": "Complete Realm Taxonomy pass 2026-10-13. Archive first. Leftover is Kind-Substitution. Refuse 150 inventions. Mint only on a retrieved wrong-kind sentence."
+}
